@@ -1,0 +1,129 @@
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\documentclass[uplatex,a4paper,10.5pt]{jsreport}
+
+%==============pre======================
+\usepackage[dvipdfmx]{graphicx,color}
+
+\usepackage[dvipdfmx,hidelinks]{hyperref}
+\usepackage{pxjahyper}
+\usepackage[backend=biber,style=authoryear]{biblatex} %biberだとうまくいかない？style消してbibstyle=apaでもいいな
+\addbibresource{sotsuron.bib}
+\usepackage{float}
+
+\usepackage[truedimen,mag=1200,top=20truemm,bottom=20truemm,left=25truemm,right=25truemm]{geometry}
+
+\usepackage{cleveref}
+
+\crefname{figure}{図}{figs.}
+\crefname{table}{表}{tabs.}
+\crefformat{chapter}{第#2#1#3章}
+\crefformat{section}{#2#1#3節}
+\crefformat{subsection}{#2#1#3項}
+
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+
+\setcounter{tocdepth}{2}
+%=========================================
+%目安15000−20000字くらい　頑張ろう
+%タイトルどうしようかな
+
+\title{ \Large 俺はジャイアンガキ大将}
+
+\author{\\ホリデー大学　エンジョイ学部　頑張れ学科\\学籍番号\\名前}
+
+% for print
+\date{}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+\vspace*{100truept}
+{\Large 2020ネンド　卒業論文です}\\
+\vspace{50truept}
+{\huge 俺はジャイアンガキ大将}\\ % タイトル
+%\vspace{10truept}
+%{\huge のび太は伸びるのか}\\ % サブタイトル（なければコメントアウト）
+\vspace{10truept}
+{\large The Relationship between Kaoru and THE BOSS}\\ % タイトル
+%{\large Nobita think}\\
+\vspace{60truept}
+
+{\Large 2021年1月30日提出}\\ % 提出日
+\vspace{60truept}
+{\Large ホリデー大学　労働学部　共産学科}\\
+%{\Large 専攻とかコースがあれば}\\
+%\vspace{20truept}
+%{\Large 課程とか入学年度とか}\\
+%\vspace{20truept}
+{\Large 学籍番号}\\
+%\vspace{20truept}
+{\Large 姓　名}\\ % 著者
+{\Large LAST First}\\ % 著者
+
+\vspace{60truept}
+{\large
+指導教員：やさしい教授\\
+}
+\end{center}
+
+\end{titlepage}
+
+%====================================================
+
+\begin{abstract}
+本研究は人がどのようにのび太とジャイアンが関係性を持っているか、歴史的な分析と実験を基に考察するものである。出木杉の先行研究[2045]を参考に、酒の味と調和する純音の周波数を求める実験をした。この実験により個人の感覚の中で夏の映画の時のみに繋がりがあることが示された。さらにこの実験結果を踏まえしずかののび太に対する影響に着目し、Suneoらの先行研究に基づきしずかが人の記憶に与える影響を確認した。その結果しずかとふれあった時間と記憶量の関係に一定の傾向が見られた。以上の結果に対し人間関係の考察を行った。
+\end{abstract}
+
+%====================================================
+
+\begin{tableofcontents}
+  \setcounter{page}{1}
+  \pagenumbering{roman}
+\end{tableofcontents}
+
+%====================================================
+
+\chapter{はじめに}\label{chap:はじめに}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+もうかけないよ〜
+
+
+
+\section*{のび太の出生}\label{sect:のび太の出生}
+\section{原始：のび太の分子}　\label{sect:原始}
+原始時代ののび太の分子は今のその姿を作るものである。出木杉は\autocite{出木杉2018}[\cref{fig:出木杉}]は儀式におけるのび太分子の重要性を示している。
+しずかやジャイアンの存在も確認されている\autocite{出木杉2018}。即ち少なくともおよそ8000年前からのび太はジャイアン、しずかと繋がっていたと言える。
+
+ドラ・エモンは『シャーマニズム』において
+\begin{quote}
+  \emph{「太鼓に生命を与える」ための祭儀は最も興味深いものである。のび太が太鼓にビールを振りかけると、太鼓の「枠」は「生き返り」、のび太の口を通して、今は太鼓になっている木がどのように森の中で生長し、伐りとられ、村に運ばれたか、を語る。それから今度は、彼は太鼓の皮にビールを振りかけるが、その皮も「生き返って」、過去を物語るのである。}\autocite[ママ訳]{ドラ1974}
+\end{quote}
+と述べている。のび太が酒の力で「生命を与える」ことで太鼓が過去を語り、部族の起源をなす規範的モデルや原初の動物について「歌う」ことができるとあり、のび太と酒が重要な役割を果たしている一例となっている。
+
+・・・・・
+%=========================
+
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{謝辞}
+\chapter*{謝辞}
+
+ありがとうオリゴ糖
+
+\vspace{\baselineskip}
+嫌なことがあった日は酒を飲んで寝て忘れる、というのは科学的な観点から考察すると適切ではない（笑）
+
+\addcontentsline{toc}{chapter}{参考文献}
+\printbibliography[title = 参考文献]
+
+
+\end{document}
